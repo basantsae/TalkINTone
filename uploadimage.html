@@ -162,6 +162,25 @@ select{
   button:hover {
     opacity:1;
   }
+
+  .uploadimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  input{
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .extract{
+    padding: 5px;
+    border-radius: 0;
+    background-color: #cdcdcd;
+    font-size: 15px;
+    cursor: pointer;
+  }
   
 </style>
 </head>
@@ -220,8 +239,15 @@ select{
 
 <div class="bg-text">
         <form >
-                <h1 class="head">Text To Speech</h1>
-                <p>Enter your text to transform to speech:</p>
+
+               <h1 class="head">Upload Image</h1>
+                <p>Click on the "Choose Image" button to upload an image:</p>
+
+              <div class="uploadimg">
+               <input type="file" id="selfie" name="selfie" accept="image/*" capture="user" />
+               <button type="button" class="extract">Extract here</button>
+              </div>
+
                   <textarea id="text" name="text" rows="6" cols="55" placeholder="text here.."></textarea>
                   <br>
                   <div class="row">

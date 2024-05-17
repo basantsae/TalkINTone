@@ -1,0 +1,169 @@
+<!Doctype Html>  
+<Html>     
+    <head>      
+      <Title>     
+          Contact us 
+         </Title>  
+       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+       <style>
+            body {
+              font-family: "Lato", sans-serif;
+            }    
+
+            .sidenav {
+              height: 100%;
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              background-color: #111;
+              overflow-x: hidden;
+              transition: 0.5s;
+              padding-top: 60px;
+            }
+
+            .sidenav a {
+              padding: 8px 8px 8px 32px;
+              text-decoration: none;
+              font-size: 25px;
+              color: #818181;
+              display: block;
+              transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+              color: #f1f1f1;
+            }
+
+            .sidenav .closebtn {
+              position: absolute;
+              top: 0;
+              right: 25px;
+              font-size: 36px;
+              margin-left: 50px;
+            }
+
+            #main {
+              transition: margin-left .5s;
+              padding: 16px;
+            }
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              margin-top: 6px;
+              margin-bottom: 16px;
+              border: 1px solid lightgray;
+              border-radius: 5px;
+              resize: vertical;
+              box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            input[type=text], select{
+              background-color:lightblue;
+            }
+            input[type=submit] {
+              background-color:lightblue;
+              color: black;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              display: inline-block;
+              transition-duration: 0.4s;
+                
+            }
+            input[type=submit]:hover{
+              box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+              background-color:lightseagreen;
+            }
+            
+            .container {
+              border-radius: 5px;
+              background-color: beige;
+              padding: 10px;
+            }
+
+
+            .column {
+              float: left;
+              width: 40%;
+              margin-top: 6px;
+              padding: 20px;
+            }
+
+
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            @media screen and (max-width: 600px) {
+            .column, input[type=submit] {
+            width: 80%;
+            margin-top: 0;
+               }
+            }
+
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+            }
+            .footer {
+              left: 0;
+              bottom: 0;
+              background-color: beige;
+              color: black;
+              text-align: center;
+            }
+               </style>
+               </head>
+     <body>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script> 
+
+<div class="container">
+  <div style="text-align:center">
+    <h2 style="font-family:Papyrus,Fantasy">Contact Us</h2>
+    <p style="font-family:Papyrus,Fantasy ; font-size:x-large;">Leave us a message.</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="IMG_20240314_220445_542.jpg" style="width:90% ; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="egypt">Egypt</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</head>
+  
+</Html>
